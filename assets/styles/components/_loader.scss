@@ -1,0 +1,44 @@
+#loading-cover {
+	transition: transform $transition-time ease-in-out, opacity $transition-time ease-in-out;
+	transform: translate(0, 0);
+	position: fixed;
+	opacity: 1;
+	top: 50%;
+	left: 50%;
+	z-index: $zindex-tooltip;
+	width: 30px;
+	height: 30px;
+	margin-left: -15px;
+	margin-top: -15px;
+
+	&.hello-app {
+		transform: translate(0, -30px);
+		opacity: 0;
+	}
+}
+
+
+circle.rotate {
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%;
+  stroke-width: 30px;
+  stroke: $brand-primary;
+  fill: transparent;
+  stroke-dasharray: 600;
+  stroke-dashoffset: 600;
+  animation: anim-circle-border ($transition-time * 3) ease-in-out infinite alternate;
+}
+
+
+// PERCENT CIRCLE ANIMATION
+@keyframes anim-circle-border {
+  0% {
+    stroke-dashoffset: 600;
+  }
+  50% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: -600;
+  }
+}

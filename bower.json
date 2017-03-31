@@ -1,0 +1,47 @@
+{
+  "name": "sage",
+  "homepage": "https://roots.io/sage/",
+  "authors": [
+    "Ben Word <ben@benword.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "git://github.com/twbs/bootstrap.git#v4.0.0-alpha.6",
+    "barba.js": "luruke/barba.js#^1.0.0",
+    "webfontloader": "^1.6.27",
+    "imagesloaded": "^4.1.1",
+    "velocity": "^1.5.0",
+    "waypoints": "waypoint#^4.0.1"
+  },
+  "overrides": {
+    "bootstrap": {
+      "main": [
+        "scss/_mixins.scss",
+        "scss/_normalize.scss",
+        "scss/_print.scss",
+        "scss/_reboot.scss",
+        "scss/_type.scss",
+        "scss/_grid.scss",
+        "scss/_forms.scss",
+        "scss/_buttons.scss",
+        "scss/_images.scss",
+        "scss/_input-group.scss",
+        "scss/_custom-forms.scss",
+        "scss/_nav.scss",
+        "scss/_navbar.scss",
+        "scss/_list-group.scss",
+        "scss/_responsive-embed.scss",
+        "scss/_transitions.scss",
+        "scss/_utilities.scss",
+        "js/dist/util.js",
+        "js/dist/scrollspy.js"
+      ]
+    },
+    "waypoints": {
+      "main": [
+        "lib/jquery.waypoints.min.js"
+      ]
+    }
+  }
+}
